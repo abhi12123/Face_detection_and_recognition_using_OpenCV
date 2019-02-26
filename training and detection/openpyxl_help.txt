@@ -1,0 +1,43 @@
+#to import package
+import openpyxl 
+
+#load workbook, parameter is the name of workbook
+wb=openpyxl.load_workbook('att.xlsx')
+
+#prints type of workbook
+print(type(wb))
+
+#prints sheetnames
+print(wb.sheetnames)
+
+#loads sheet
+sheet=wb['Sheet1']
+
+#prints type of sheet
+print(type(sheet))
+
+#manipulating the cell 
+print(sheet['A1'].value)
+sheet['A2'].value=22
+
+#another to way to access cell, suitable for loops and such
+sheet.cell(row=1,column=2).value=26
+
+#print sheet title
+print(sheet.title)
+
+#assign sheet title
+sheet.title='mysheetname'
+
+#eg for loop
+for i in range(1,10):
+	sheet.cell(row=i, column=1).value=5
+
+#print max num of rows
+print(sheet.max_row)
+
+#print max num of columns
+print(sheet.max_column)
+
+#saves the workbook
+wb.save("att.xlsx")
