@@ -1,3 +1,5 @@
+#program to train data
+
 import cv2
 import os
 import numpy as np

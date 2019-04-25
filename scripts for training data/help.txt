@@ -1,0 +1,7 @@
+camera-test.py : to test whether the camera is working. A window with black and white feed is shown
+clean.py :	 reads an input image and displays detected face and eyes
+ipcamdet.py :    inputs feed from ip Webcam app and detect face
+resize.py :	 takes a series of images as input and resizes them accrodingly
+face_from_image.py: takes a series of images as input and detects faces from them and stores them
+image_maker.py: uses camera to detect face and take series of photos
+phonecam.py :    inputs feed from ip Webcam app

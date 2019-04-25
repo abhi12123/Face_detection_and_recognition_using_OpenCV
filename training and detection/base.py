@@ -1,3 +1,5 @@
+#program to test the camera
+
 import numpy as np
 import cv2
 
