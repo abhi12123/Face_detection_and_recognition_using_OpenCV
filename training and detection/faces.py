@@ -44,7 +44,6 @@ cap = cv2.VideoCapture(0)
 ar=[0]*100
 
 #url='http://192.168.1.2:8080/shot.jpg' #remove hash if ip webapp is being used
-
 while(True):
 	#imgResp=urllib.request.urlopen(url) #remove hash if ip webapp is being used
 	#imgNp=np.array(bytearray(imgResp.read()),dtype=np.uint8) #remove hash if ip webapp is being used
@@ -59,7 +58,7 @@ while(True):
 		font = cv2.FONT_HERSHEY_SIMPLEX
 		color = (255, 255, 255)
 		stroke = 2
-		if conf>=4 and conf <= 85:
+		if conf>=40 and conf <= 85:
 			ar[id_]=ar[id_]+1
 			name = labels[id_]
 			cv2.putText(frame, name, (x,y), font, 1, color, stroke, cv2.LINE_AA)

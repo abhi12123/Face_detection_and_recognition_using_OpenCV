@@ -2,7 +2,7 @@ import numpy as np
 import cv2 
 
 face_cascade = cv2.CascadeClassifier('cascades/data/haarcascade_frontalface_alt2.xml')
-for i in range(0,7):
+for i in range(0,21):
 	img = cv2.imread('images_resized/'+str(i)+'.jpg')
 	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	faces = face_cascade.detectMultiScale(gray, 1.3, 5)
